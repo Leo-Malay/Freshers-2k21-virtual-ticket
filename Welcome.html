@@ -5,18 +5,13 @@
         <meta charset="utf-8" />
         <meta name="keywords" content="WELCOME​​" />
         <meta name="description" content="" />
-        <meta
-            name="page_type"
-            content="np-template-header-footer-from-plugin"
-        />
         <title>Welcome</title>
         <link rel="stylesheet" href="./css/nicepage.css" media="screen" />
         <link rel="stylesheet" href="./css/Welcome.css" media="screen" />
         <script
-            class="u-script"
-            type="text/javascript"
-            src="jquery.js"
-            defer=""
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"
         ></script>
         <script
             class="u-script"
@@ -302,7 +297,7 @@
                                     >
                                         <form
                                             action="#"
-                                            method="POST"
+                                            method="GET"
                                             class="
                                                 u-clearfix
                                                 u-form-spacing-10
@@ -316,6 +311,7 @@
                                             >
                                                 <input
                                                     type="text"
+                                                    value="name"
                                                     placeholder="Your Name"
                                                     id="name-ff44"
                                                     name="name"
@@ -384,7 +380,7 @@
             function custom_submit_malay() {
                 console.log(document.getElementById("name-ff44").value);
                 window.location.replace(
-                    "/Ticket.html?name=" +
+                    "/Freshers-2k21-virtual-ticket/Ticket.html?name=" +
                         document.getElementById("name-ff44").value
                 );
                 // window.location.pathname =
