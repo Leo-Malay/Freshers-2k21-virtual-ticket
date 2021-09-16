@@ -311,10 +311,10 @@
                                             >
                                                 <input
                                                     type="text"
-                                                    value="name"
                                                     placeholder="Your Name"
                                                     id="name-ff44"
                                                     name="name"
+                                                    autocomplete="off"
                                                     class="
                                                         u-border-1
                                                         u-border-grey-30
@@ -378,7 +378,7 @@
         </section>
         <script>
             function custom_submit_malay() {
-                console.log(document.getElementById("name-ff44").value);
+                // console.log(document.getElementById("name-ff44").value);
                 window.location.replace(
                     "/Freshers-2k21-virtual-ticket/Ticket.html?name=" +
                         document.getElementById("name-ff44").value
